@@ -1,7 +1,7 @@
 Heroku Buildpack for Node.js
 ============================
 
-This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. If you fork this repository, please **update this README** to explain what your fork does and why it's special.
+This is a fork of the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. This fork works around the `npm install` [self-signed certificate issue](http://blog.npmjs.org/post/78085451721/npms-self-signed-certificate-is-no-more) by configuring npm to use known registrars.
 
 
 How it Works
