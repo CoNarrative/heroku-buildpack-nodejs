@@ -83,10 +83,10 @@ fi
   fi
 
   status "Configuring npm to use known repositories"
-  npm config set ca ""
+  npm config --userconfig $build_dir/.npmrc set ca ""
 
-  status "Disabling strict-ssl in npm"
-  npm config set strict-ssl false
+  # status "Disabling strict-ssl in npm"
+  # npm config set strict-ssl false
 
   status "Installing dependencies"
   # Make npm output to STDOUT instead of its default STDERR
